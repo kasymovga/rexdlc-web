@@ -1,0 +1,3 @@
+M dpmaster.tchr.no
+M dpmaster.deathmask.net
+U 108.61.164.188:27950

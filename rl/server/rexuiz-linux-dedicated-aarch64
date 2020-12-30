@@ -1,0 +1,24 @@
+#!/bin/sh
+
+stty quit undef
+DIR="`dirname "$0"`"
+chmod 755 "$DIR/update.sh"
+test -z "$REXUIZ_NOUPDATE" && flock "$DIR/.update.lock" "$DIR/update.sh" "$DIR/.."
+if test -z "$LD_LIBRARY_PATH"
+then
+	export LD_LIBRARY_PATH="`pwd`/linux-bins/aarch64"
+else
+	export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:`pwd`/linux-bins/aarch64"
+fi
+chmod 755 "$DIR"/../linux-bins/aarch64/rexuiz-dedicated
+if test -n "$REXUIZ_LOGDIR"
+then
+	"$DIR"/../linux-bins/aarch64/rexuiz-dedicated -basedir "$DIR/../" "$@" | LOGPREFIX="$REXUIZ_LOGDIR/rexuiz-" LOGSUFFIX=".log" split -l 10000 --filter 'rm -f `ls -t "$LOGPREFIX"*"$LOGSUFFIX"|tail -n +10`; exec tee -a "$LOGPREFIX`date +%Y%m%d%H`$LOGSUFFIX"' - none
+else
+	if test -n "$REXUIZ_SYSLOG"
+	then
+		"$DIR"/../linux-bins/aarch64/rexuiz-dedicated -basedir "$DIR/../" "$@" | logger -s -t "rexuiz$REXUIZ_SYSLOG"
+	else
+		exec "$DIR"/../linux-bins/aarch64/rexuiz-dedicated -basedir "$DIR/../" "$@"
+	fi
+fi
