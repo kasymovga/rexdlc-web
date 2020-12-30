@@ -1,0 +1,25 @@
+#!/bin/sh
+
+cd "`dirname "$0"`"
+if test -h ~/.rexuiz -a ! -d ~/.rexuiz
+then
+	rm -f ~/.rexuiz
+fi
+for F in data/dlcache/zzz-rexdlc_*.pk3
+do
+	F=~/.rexuiz/data/dlcache/${F##*/}
+	if test -f "$F"
+	then
+		echo "Duplicated package $F!"
+		rm -f "$F"
+	fi
+done
+if test -z "$LD_LIBRARY_PATH"
+then
+	export LD_LIBRARY_PATH="`pwd`/linux-bins/i686"
+else
+	export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:`pwd`/linux-bins/i686"
+fi
+export SDL_DYNAMIC_API=libSDL2.so
+chmod 755 ./linux-bins/i686/rexuiz-sdl
+exec ./linux-bins/i686/rexuiz-sdl -basedir . "$@" +integration_discord_game_command "`pwd`/`basename "$0"`"
