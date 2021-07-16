@@ -20,3 +20,4 @@ survival_pack2
 zapper_v1
 zapper_v2
 uganda
+shootingrange
