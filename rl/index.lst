@@ -38,6 +38,7 @@ c72e6e06da86a2cc013a3df5bcb48e63|1567|data/dlcache/zzz-rexdlc_warpzone.pk3
 d5d1595721868adef9af6d7425b946d6|187464|data/dlcache/zzz-rexdlc_supershotgun.pk3
 ed88079d170852ed90ab7aab54a7ac1d|1421981|data/dlcache/zzz-rexdlc_menu_theme_luma_luminos.pk3
 17539ec5e81c799fa33dd4ef2a48df68|40212|data/dlcache/zzz-rexdlc_pryaxe_balls.pk3
+eb17fa810d70bbdd98bbaa1a8fb51973|14412594|data/dlcache/zzz-rexdlc_spdemo_v6.pk3
 9c5460821e0d341aa537d4cdedbc8e87|2738829|data/dlcache/zzz-rexdlc_xonrl.pk3
 cece37288ab2f6fbdd54ecbd19fb7e00|408476|data/dlcache/csprogs.dat.408476.61283
 2105c3bd0ead50eab7685108282b54c8|229110|data/dlcache/zzz-rexdlc_n23electro.pk3
@@ -78,7 +79,6 @@ b3a230534ac0ab85f75d1b77d77ff2c5|141344|data/dlcache/zzz-rexdlc_n23uzi.pk3
 269eb0ef1d05ea0fe4f1880d721e4f81|60601|data/dlcache/zzz-rexdlc_powerups.pk3
 e47a3d5058215ba6f536b1ab27c20a8d|495862|data/dlcache/zzz-rexdlc_font-iceland.pk3
 bb7d7a6251611f46693309d7bb163ca6|2121649|data/dlcache/zzz-rexdlc_xonlaser.pk3
-9dde19ef725c4c2f65b598b6041c287a|11126216|data/dlcache/zzz-rexdlc_spdemo_v5.pk3
 2e2b30b58b304588c934bf5fa946a2ab|222184|data/dlcache/zzz-rexdlc_n11shotgun.pk3
 0a60e93adb6c9a7f0381b5fbee5454e1|19786525|data/dlcache/zzz-rexdlc_classiccampaign-p2.pk3
 793ae91802e3e37ebeca9082e8923535|35565434|data/dlcache/zzz-rexdlc_classiccampaign.pk3
@@ -88,7 +88,7 @@ da60160e9d20ee76cc5456e4ebae7766|70728058|data/rexuiz-base-textures.pk3
 08e85615417fa03999fd0864a70aaa6c|35628217|data/rexuiz-base-maps.pk3
 3a3549730cc272c9cb65ba3dddefa3ff|63419947|data/rexuiz-base-models.pk3
 d897d54b4faf1deb2e66366e393943a4|1583|data/rexuiz-warpzone.pk3
-f7ce115518e64f7d753fcc2e855e7899|1109953|data/rexuiz.pk3
+4c94a8fce3340d87afef656b47a85dca|1111856|data/rexuiz.pk3
 701fbd19e1e21c7ed16813bd873ddd80|28724|data/common-spog.pk3
 4ed9f4c17f396a22368e5d46d9fffd8f|55935664|data/rexuiz-base-textures-extra.pk3
 5d6b5b65cc421db49b6a7979ff032a25|83389148|data/rexuiz-base-maps-lightmaps.pk3
